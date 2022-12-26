@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="from">
+      <h1>YouTube Video Downloader</h1>
+      <div class="result1">
+        <span>🔗 Enter Your YouTube Video Url</span>
+      </div>
+      <input type="text" class="link YouTube" placeholder="Enter Your YouTube Url..."  />
+      <select class="format" required onchange="Getdownload()">
+         <option disabled selected="">Select Video Option</option>
+         <option value="Thumbnail">Download Video Thumbnail</option>
+         <option disabled>Select Song format</option>
+         <option value="mp3">Mp3</option>
+         <option value="m4a">M4A</option>
+         <option disabled>Select Video format</option>
+         <option value="360">360p</option>
+         <option value="480">480p</option>
+         <option value="720">720p</option>
+         <option value="1080">1080p</option>
+         <option value="4k">4k</option>
+         <option value="8k">8k</option>
+      </select>
+    <div class="hidden">
+        <input type="text" name="type" class="link Idurl" hidden>
+        <input type="url" name="url" class="link form-control" hidden>
+        <div class="result2"></div>
+    </div>
+ </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
